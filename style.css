@@ -1,0 +1,170 @@
+@import url(audiostyle.css);
+
+body {
+    background-image: url("sources/background.gif");
+    background-size: cover;
+    /* cobre a tela toda */
+    background-position: center;
+    /* centraliza */
+    background-repeat: no-repeat;
+    /* não repete */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-frame {
+    width: 110vh;
+    height: 100%;
+
+    background-color: rgb(218, 117, 198);
+    border-color: black;
+    border: 2px solid rgba(209, 55, 179, 0.714);
+    border-radius: 10px;
+    padding: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("fonts/Minecraft.ttf");
+
+    font-family: "Schoolbell";
+    src: url("fonts/Schoolbell-Regular.ttf")
+}
+
+
+.frame-title {
+    text-align: center;
+    font-family: "Minecraft";
+    font-size: x-large;
+
+    color: rgb(85, 26, 74);
+
+    width: auto;
+    height: 10vh;
+
+    background-color: rgb(62, 41, 13);
+    border-color: black;
+    border: 2px solid rgba(157, 112, 82, 0.714);
+    border-radius: 10px;
+    padding: 10px;
+
+    background-image: url("sources/0sanrio.jpg");
+    background-size: 200px;
+
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.frame-big {
+    width: auto;
+    height: 45vh;
+    background-color: rgb(218, 117, 198);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.frame-big .frame-left {
+    width: 23%;
+    border-radius: 10px;
+    background-color: rgb(184, 112, 167);
+    padding: 10px;
+
+    background-color: (184, 112, 167);
+    border-color: black;
+    border: 2px solid rgba(209, 55, 179, 0.714);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.frame-big .frame-mid {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    background-color: (184, 112, 167);
+    border-color: black;
+    border: 2px solid rgba(209, 55, 179, 0.714);
+
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(184, 112, 167);
+
+}
+
+.frame-big .frame-right {
+
+    background-image: url("sources/cherosacoluna.jpeg");
+    background-size: cover;
+
+    border-color: black;
+    border: 2px solid rgba(209, 55, 179, 0.714);
+
+    width: 25%;
+    background-color: rgb(184, 112, 167);
+    border-radius: 10px;
+
+
+
+}
+
+.frame-big .frame-left img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.frame-music {
+    width: 45%;
+    border-radius: 10px;
+    background-color: rgb(184, 112, 167);
+    padding: 14px;
+    height: auto;
+
+    background-color: (184, 112, 167);
+    border-color: black;
+    border: 2px solid rgba(209, 55, 179, 0.714);
+    display: flex;
+
+}
+
+.botao {
+    padding: 12px;
+
+}
+
+.secret-style {
+    position: absolute;
+
+    margin-top: 0;
+
+    background-color: rgb(255, 243, 175);
+    border-radius: 10px;
+    border: 2px solid rgba(157, 112, 82, 0.714);
+    padding: 10px;
+
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhacherósa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-frame">
+        <div class="frame-title">
+            <img style="margin-bottom: 1%; width: 14%;" src="sources/coracao.gif" alt="">
+
+            <img style="margin-left: 3; width: 50%;" src="sources\text.gif" alt="">
+
+            <img style="width: 8%" src="sources/ghostie.gif" alt="">
+        </div>
+
+        <img src="" alt="">
+
+        <div class="frame-big">
+            <div class="frame-left">
+                <img src="sources/princesa.jpeg">
+
+                <p style="font-size: 1.9vh; text-align:left; margin-top: 8px;font-family: Schoolbell;">
+                    Essa, é o amor da minha vida! E você já deve saber o nome dela! Não consigo
+                    botar em pixel, nesse site, o quanto que eu amo ess a mulher marvilhosa.
+                    Ela é minha. Completamente.
+                </p>
+            </div>
+
+            <div class="frame-mid">
+                <div>
+                    <img style="width:70%;" src="sources\welcomee.gif" alt="">
+                    <P style="font-family: Schoolbell; font-size: 2vh; align-items: center;">Fiz esse site, para mostrar
+                        e
+                        também eternizar, o
+                        quanto que eu sou obcecado por essa mulher.
+                        Quero mostrar para os nossos filhos, o quão é vibe da mamãe deles! Eu te amo, muito! Quero ficar
+                        pra sempre ao seu lado. "Eu quero tudo de você, pra sempre, todos os dias"
+                        "Eu quero que você me coma até os ossos"
+                    </P>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <img width="130px" src="sources/aespa.gif" alt="">
+                    <img style=" margin-top: -60px; width: 120px; object-fit: contain;" src="sources/06714w07.gif"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="frame-right">
+            </div>
+        </div>
+        <div class="frame-music">
+
+            <audio id="musica" src="sources/audio/Stone Temple Pilots - Creep (Official Music Video).mp3"></audio>
+
+            <div style="width: 20px;">
+                <div class="win95-card">
+                    <div class="card-titlebar">
+                        <span class="card-title-text">Media Player</span>
+                        <div class="card-controls">
+                            <button class="card-btn card-btn-min"></button>
+                            <button class="card-btn card-btn-max"></button>
+                            <button class="card-btn card-btn-close"></button>
+                        </div>
+                    </div>
+                    <div class="card-menubar">
+                        <span class="menu-item">File</span>
+                        <span class="menu-item">Play</span>
+                        <span class="menu-item">Options</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="player-display">
+                            <span id="track" class="track-name">sources/audio/Stone Temple Pilots - Creep (Official
+                                Music Video).mp3</span>
+                            <span class="track-time">00:42 / 03:17</span>
+                        </div>
+                        <div class="player-progress">
+                            <div class="progress-fill"></div>
+                            <div class="progress-thumb"></div>
+                        </div>
+                        <div class="player-controls">
+                            <button class="ctrl-btn ctrl-prev" onclick="voltar()"></button>
+                            <button class="ctrl-btn ctrl-play" onclick="tocar()">
+                            </button>
+                            <button class="ctrl-btn ctrl-stop" onclick="parar()"></button>
+                            <button class="ctrl-btn ctrl-next" onclick="prox_msc()"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    let recuros = ["sources/audio/Stone Temple Pilots - Creep (Official Music Video).mp3", "sources/audio/Alice In Chains - Rotten Apple (Official Audio).mp3", "sources\audio\Lil Peep - Save That Shit (Official Video).mp3"]
+                    let cont = 0;
+                    //["a","b","c"];    
+                    //[0,1,2];
+                    //0
+                    //
+
+                    function alterar_msc() {
+                        document.getElementById("track").textContent = recuros[cont];
+
+
+                        document.getElementById("musica").src = recuros[cont];
+                        let som_atual = recuros[cont];
+                        document.getElementById("musica").play()
+                    }
+
+                    function prox_msc() {
+                        if (cont < 2) {
+                            cont += 1;
+                        } else {
+                            cont = 0;
+                        }
+
+                        alterar_msc();
+
+                    }
+
+                    function tocar() {
+                        document.getElementById("musica").play();
+                    }
+                    function parar() {
+                        let audio = document.getElementById("musica");
+                        audio.pause();
+                        audio.currentTime = 0; // volta pro início
+                    }
+                    function voltar() {
+                        let audio = document.getElementById("musica");
+
+                        if (cont <= 0) {
+                            cont = 2;
+                        } else {
+                            cont -= 1;
+                        }
+                        alterar_msc();
+                    }
+                </script>
+
+
+            </div>
+
+
+            <img style="width: 120px; margin-left: 68%; object-fit: contain;" src="sources/phonograph.gif" alt="">
+        </div>
+        <div class="gifs">
+            <div style="display: flex; flex-direction: column;">
+                <img style="width: 180px;" src="sources/camisaalice.png" alt="">
+                <img style="width: 180px;margin-left: 6px;" src="sources/fucktrump.gif" alt="">
+
+            </div>
+
+            <div style="position: relative;">
+                <img style="width: 180px; position: absolute; margin-top: -256px; margin-left: 180px;"
+                    src="sources/lilpeep.png" alt="">
+
+                <img style="width: 200px; position: absolute; margin-top: -200px; margin-left: 305px;"
+                    src="sources\Marceline.gif" alt="">
+            </div>
+
+            <div class="blocao">
+                <img style="width: 200px; margin-left: 515px; position: absolute; margin-top: -420px;"
+                    src="sources/princesaa.jpeg" alt="">
+
+                <img style="width: 200px; margin-left: 515px; position: absolute; margin-top: -220px;"
+                    src="sources\le-kitties.gif" alt="">
+
+                <img style="width: 100px; margin-left: 515px; position: absolute; margin-top: -130px; border-radius: 5%;"
+                    src="sources\kitten.jpg" alt="">
+            </div>
+            <div>
+                <img style="width: 300px; margin-left: 730px; position: absolute; margin-top: -420px;aspect-ratio: 1.7/1; object-fit: cover; border-radius: 10px;"
+                    src=" sources\abc.jpeg" alt="">
+
+                <img style="width: 300px; margin-left: 730px; position: absolute; margin-top: -240px;aspect-ratio: 1.7/1; object-fit: cover; border-radius: 10px;"
+                    src="sources\kittystamp.gif" alt="">
+
+                <button onclick="teste()">
+                    <img style="width: 100px; margin-left: 620px; position: absolute; margin-top: -130px; border-radius: 5%;"
+                        src="sources\Love Series 爱心系列 540x480.gif" alt="">
+                </button>
+
+                <script>
+                    function teste() {
+                        document.getElementById("secret").style = "visibility : visible";
+                    }
+                </script>
+
+                <img style="width: 300px; margin-left: 730px; position: absolute; margin-top: -50px"
+                    src="sources\mymelody.gif" alt="">
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+<div style="position: absolute; margin-top: -500px; margin-left: -350px;">
+    <div id="secret" style="visibility:hidden;">
+        <div class="secret-style">
+
+            <div style="max-width: 200px; display: flex; flex-direction: column; justify-content: space-between;">
+                <b>Digite a Senha Secreta para desbloquear a Música Secreta...</b>
+                <p>(4 Digitos)</p>
+                <input id="senha" type="text">
+                <button onclick="verificar_senha()">Enviar</button>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <b id="texto_erro" style="visibility: hidden;">INCORRETO!</b>
+                <img id="robo" style="visibility: hidden;" src="sources\boombox3.gif" alt="">
+
+            </div>
+
+            <p style="margin-top: -5px;"><button onclick="fechar()">x</button></p>
+        </div>
+
+        <script>
+            function verificar_senha() {
+                if (document.getElementById("senha").value == "1502") {
+                    document.getElementById("robo").style = "visibility: visible";
+
+                    document.getElementById("texto_erro").textContent = "CORRETO!"
+                    document.getElementById("texto_erro").style = "visibility: visible; color: green;";
+
+                    let audio2 = document.getElementById("musica");
+                    audio2.src = "sources/audio/MC SS & MC SONSON - MINHA CHEROSA.mp3";
+                    audio2.play();
+
+                } else {
+                    document.getElementById("texto_erro").style = "visibility: visible; color: red;";
+                }
+            }
+
+            function fechar() {
+                document.getElementById("secret").style = "visibility : hidden";
+
+                document.getElementById("robo").style = "visibility: hidden";
+                document.getElementById("texto_erro").style = "visibility: hidden; color: green;";
+            }
+        </script>
+    </div>
+
+</div>
+
+</html>
